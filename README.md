@@ -1,7 +1,7 @@
 # Collection
 
 
-<img align="center" src="https://raw.githubusercontent.com/v1nc1d4/Hacktoberfest2021/13a80865f1457d356c53c33a65b8fa1c5bd6e5f6/img/logo.svg">
+<img align="center" src="https://github.com/OyePradumya/Collection/blob/1366c0bd85b6d2a9f38c19998bfe4ae961581bb1/hacktoberfest-2022.png">
 
 <p align="center">
    <img alt="GitHub issues" src="https://img.shields.io/github/issues/OyePradumya/Collection"></a>
@@ -9,7 +9,7 @@
    <img alt="GitHub stars" src="https://img.shields.io/github/stars/OyePradumya/Collection"></a>
 </p>
 
-A Beginner friendly repo to push PRs for Hacktoberfest2021
+A Beginner friendly repo to push PRs for Hacktoberfest2022 in Education Sector.
 
 ## What is Hacktoberfest?
 
