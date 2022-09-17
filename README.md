@@ -9,7 +9,7 @@
    <img alt="GitHub stars" src="https://img.shields.io/github/stars/OyePradumya/Collection"></a>
 </p>
 
-A Beginner friendly repo to push PRs for Hacktoberfest2022 in Education Sector.
+A Beginner friendly repo to push PRs for Hacktoberfest 2022.
 
 ## What is Hacktoberfest?
 
