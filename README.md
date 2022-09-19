@@ -4,9 +4,16 @@
 <img align="center" src="https://github.com/OyePradumya/Collection/blob/1366c0bd85b6d2a9f38c19998bfe4ae961581bb1/hacktoberfest-2022.png">
 
 <p align="center">
-   <img alt="GitHub issues" src="https://img.shields.io/github/issues/OyePradumya/Collection"></a>
-   <img alt="GitHub forks" src="https://img.shields.io/github/forks/OyePradumya/Collection"></a>
-   <img alt="GitHub stars" src="https://img.shields.io/github/stars/OyePradumya/Collection"></a>
+<img src="https://img.shields.io/github/stars/OyePradumya/Collection?style=for-the-badge" alt="github stars"></a>
+<a href="https://github.com/OyePradumya/Collection/network/members"><img src="https://img.shields.io/github/forks/OyePradumya/Collection?style=for-the-badge" alt="github forks"></a>
+<a href="https://github.com/OyePradumya/Collection/issues"><img src="https://img.shields.io/github/issues-raw/OyePradumya/Collection?style=for-the-badge" alt="open issues"></a>
+<a href="https://github.com/OyePradumya/Collection/issues"><img src="https://img.shields.io/github/issues-closed-raw/OyePradumya/Collection?style=for-the-badge" alt="closed issues"><a/>
+<a href="https://github.com/OyePradumya/Collection/pulls"><img src="https://img.shields.io/github/issues-pr-raw/OyePradumya/Collection?style=for-the-badge" alt="open pull request"></a>
+<a href="https://github.com/OyePradumya/Collection/pulls"><img src="https://img.shields.io/github/issues-pr-closed-raw/OyePradumya/Collection?style=for-the-badge" alt="closed pull request"></a>
+
+<img src="https://img.shields.io/github/hacktoberfest/2021/OyePradumya/Collection?style=for-the-badge" alt="hacktoberfest">
+<img src="https://img.shields.io/github/last-commit/OyePradumya/Collection?style=for-the-badge" alt="last contributions">
+<a href="https://api.github.com/repos/OyePradumya/Collection/contributors"><img src="https://img.shields.io/github/contributors/OyePradumya/Collection?style=for-the-badge" alt="total contributors"></a>
 </p>
 
 A Beginner friendly repo to push PRs for Hacktoberfest 2022.
