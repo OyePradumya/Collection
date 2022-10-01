@@ -1,0 +1,380 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    align-items: center;
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    margin-top: 10%;
+}
+
+.outside {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(172, 67%, 45%);
+    letter-spacing: 8px;
+}
+
+.bigbox {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    /* margin-top: 20px; */
+    margin-top: 1%;
+    margin-right: 25%;
+    margin-left: 25%;
+    border-radius: 20px;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.leftbox {
+    flex-direction: column;
+    display: flex;
+    justify-content: left;
+    padding: 10px 20px 10px 20px;
+    /* max-width: 45%; */
+    /* padding-left: 2%; */
+    margin-right: 2.5%;
+}
+
+.leftbox p{
+    text-align: left;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.billinput {
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.billinput p{
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.billinput div{
+    position: relative;
+    background-color: transparent;
+    text-align: left;
+}
+
+.billinput input{
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none; 
+    background-color: hsl(185, 41%, 84%);
+    border-radius: 5px;
+    text-align: left; 
+    /* height: 25px; */
+    height: 60%;
+    /* width: 260px; */
+    width: 94%;
+    text-align: center;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.billinput span{
+    position:absolute;
+    justify-self: left;
+} 
+
+.tip {
+    margin-top: 20%;
+    /* margin-top: 50px; */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* gap: 10px;  */
+    gap: 5%;
+    /* row-gap: 15px; */
+    row-gap: 35%;
+    /* margin-top: 10px; */
+    margin-top: 4%;
+}
+
+.grid-container button {
+    color: white;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    /* width: 100px; */
+    width: 95%;
+    /* height: 30px; */
+    height: 12%;
+    height: 135%;
+    font-weight: 600;
+}
+
+button:hover {
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(185, 41%, 84%);
+    cursor: pointer;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#percentInput {
+    color: white;
+    text-align: center;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    /* width: 100px; */
+    width: 95%;
+    /* height: 30px; */
+    height: 12%;
+    height: 135%;
+    font-weight: 600;
+}
+
+#percentInput:focus {
+    outline: none;
+}
+
+.people {
+    /* margin-top: 50px; */
+    margin-top: 20%;
+}
+
+ .people svg {
+    /* margin-top: 10px; */
+    margin-top: 4%;
+}
+
+.people input {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none; 
+    background-color: hsl(185, 41%, 84%);
+    border-radius: 5px;
+    text-align: left; 
+    /* height: 25px; */
+    height: 50%;
+    width: 260px;
+    text-align: center;
+    font-size: medium;
+}
+
+.rightbox {
+    flex-direction: column;
+    display: flex;
+    justify-content: right;
+    padding: 10px 20px 10px 20px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    margin-left: 2.5%;
+}
+
+.rightbox p {
+    color: white;
+    display: inline;
+    margin-right: 10px;
+}
+
+.tipamount {
+    margin: 10px 10px 30px 10px;
+    font-size: 22px;
+}
+
+.tipAmt {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+    width: 115px;
+    height: 60px;
+    text-align: center;
+    color: hsl(189, 41%, 97%);
+    font-weight: 800;    
+}
+
+.total {
+    margin: 0px 10px 80px 10px;
+    font-size: 22px;
+}
+
+.total input {
+    font-size: large;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+    width: 160px;
+    height: 60px;
+    text-align: center;
+    color: hsl(189, 41%, 97%);
+    font-weight: 800;    
+    margin-left: 50px;
+}
+
+.resetbutton {
+    height: 40px;
+    width: 80%;
+    align-self: center;
+    border-radius: 10px;
+    color: hsl(184, 14%, 56%);
+    font-weight: 800;
+}
+
+@media screen and (max-width:1399px){
+    .leftbox {
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width:1800px) {
+    .leftbox {
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .people {
+        margin-top: 15%;
+    }
+
+    .grid-container {
+        margin-bottom: 7%;
+    }
+}
+
+@media screen and (max-width:645px) {
+    #inputbilljs {
+        margin-bottom: 10%;
+        height: 35%;
+        width: 70%;
+    }
+
+    .grid-container {
+        margin-bottom: 10%;
+    }
+
+    .ppl {
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width:637px) {
+    .bigbox {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width:456px) {
+    .bigbox {
+        margin-right: 4.5%;
+        margin-left: 4.5%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .bigbox {
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .tipAmt {
+        max-width: 135px;
+    }
+
+    .totalAmt {
+        max-width: 135px;
+        margin-left: 90px;
+    }
+
+    .rightbox {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .tipAmt {
+        max-width: 115px;
+    }
+
+    .totalAmt {
+        max-width: 120px;
+    }
+}
+
+@media screen and (max-width:1450px) {
+    .tipAmt {
+        max-width: 100px;
+    }
+
+    .totalAmt {
+        max-width: 120px;
+    }
+}
+
+@media screen and (max-width:618px) {
+    .ppl {
+        max-width: 94%;
+    }
+}
+
+@media screen and (max-width:1275px) {
+    body {
+        align-items: center;
+    }
+
+    .bigbox {
+        /* margin-right: 10%;
+        margin-left: 10%; */
+        flex-direction: column;
+    }
+
+    .tip {
+        margin-top: 5%;
+    }
+
+    .tipamount {
+        margin-bottom: 10px;
+    }
+
+    .total {
+        margin-bottom: 20px;
+    }
+
+    .people {
+        margin-top: 10%;
+    }
+    
+    .rightbox{
+        margin-top: 5%;
+    }
+
+    .leftbox {
+        max-width: 80%;
+        margin-left: 5%;
+    }
+}
