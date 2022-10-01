@@ -11,7 +11,7 @@
 <a href="https://github.com/OyePradumya/Collection/pulls"><img src="https://img.shields.io/github/issues-pr-raw/OyePradumya/Collection?style=for-the-badge" alt="open pull request"></a>
 <a href="https://github.com/OyePradumya/Collection/pulls"><img src="https://img.shields.io/github/issues-pr-closed-raw/OyePradumya/Collection?style=for-the-badge" alt="closed pull request"></a>
 
-<img src="https://img.shields.io/github/hacktoberfest/2021/OyePradumya/Collection?style=for-the-badge" alt="hacktoberfest">
+<img src="https://img.shields.io/github/hacktoberfest/2022/OyePradumya/Collection?style=for-the-badge" alt="hacktoberfest">
 <img src="https://img.shields.io/github/last-commit/OyePradumya/Collection?style=for-the-badge" alt="last contributions">
 <a href="https://api.github.com/repos/OyePradumya/Collection/contributors"><img src="https://img.shields.io/github/contributors/OyePradumya/Collection?style=for-the-badge" alt="total contributors"></a>
 </p>
