@@ -1,0 +1,7 @@
+step 1: clone the project from the repositry .
+step 2: pick the project .
+step 3: copy all the flies .
+step 4: go to html file run the live server 
+
+U will be able to run the project by following above steps
+Happy Coding !!
