@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  height: 100vh;
+  width: 100vw;
+}
+#preload {
+  background: url(images/loading.gif) no-repeat #000;
+  height: 100vh;
+  width: 100%;
+  background-size: 90%;
+  background-position: center;
+}
+div {
+  height: 100vh;
+  width: 100%;
+  display: table;
+  background-position: center;
+}
+
+div h1 {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3em;
+  font-weight: 600;
+  /* background-image: linear-gradient(45deg ,#bac3d3, #2a2f36); */
+  background-image: linear-gradient(45deg, #bfff00, #00fff2);
+  box-shadow: 10px 10px white;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.box1 {
+  background: url(images/parallax1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.box2 {
+  background: url(images/parallax2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.box3 {
+  height: 500px;
+  background: url(images/parallax3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.box4 {
+  background: url(images/parallax4.jpg);
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+.box5 {
+  background: url(images/parallax5.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.box6 {
+  background: url(images/parallax6.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.box7 {
+  background: url(images/parallax7.jpg);
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+.box8 {
+  background: url(images/parallax8.jpg);
+  background-size: cover;
+  height: 500px;
+  background-attachment: fixed;
+}
+.box9 {
+  background: url(images/parallax9.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.box10 {
+  background: url(images/parallax10.jpg);
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
