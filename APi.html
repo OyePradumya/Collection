@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Working With API</title>
+    <style>body{
+    background-image: url(https://source.unsplash.com/1650x900/?nature,water), linear-gradient(rgb(219, 166, 166), rgb(0, 0, 172));
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+#x{
+    visibility: hidden;
+}
+/* body {
+    background-image: url(https://picsum.photos/id/1080/6858/4574), linear-gradient(rgb(219, 166, 166), rgb(0, 0, 172));
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+} */
+#moc{
+    position: absolute;
+}
+#bdy {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mod {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mod .container{
+    height: 20vh;
+}
+#mod .container input{
+    margin: 15px;
+}
+.container {
+    box-sizing: border-box;
+    /* border: 5px solid rgba(95, 90, 90, 0.404); */
+    backdrop-filter: contrast(130%) brightness(120%) blur(2px);
+    background:
+        radial-gradient(ellipse at 16.7% -10%,
+            hsla(0, 0%, 100%, 0.44) 24%,
+            hsla(0, 0%, 100%, 0.4) 25%,
+            hsla(0, 0%, 100%, 0.2) 45%,
+            hsla(0, 0%, 100%, 0.1));
+    background-size: 300% 100%;
+    border-radius: 10px;
+    box-shadow:
+        0 2px 1px hsla(0, 0%, 100%, 0.5) inset,
+        0 -2px 1px hsla(250, 70%, 5%, 0.3) inset,
+        0 -2px 6px hsla(0, 0%, 100%, 0.25);
+
+    border-radius: 10px;
+    width: 22vw;
+    height: 49vh;
+    padding: 10px;
+    background-color: rgba(0, 236, 236, 0.185);
+    backdrop-filter: blur(20px);
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    color: rgb(157, 255, 0);
+    text-shadow:1px -2px 3px rgb(243 1 46);
+}
+.ch {
+    animation: kyle 8s infinite;
+    border-radius: 10px;
+    border-bottom: 1px solid red;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    padding: 5px;
+    height: 19px;
+    width: auto;
+    background: radial-gradient(ellipse at 16.7% -10%,
+    hsla(0, 0%, 100%, 0.44) 24%,
+    hsla(0, 0%, 100%, 0.4) 25%,
+    hsla(0, 0%, 100%, 0.2) 45%,
+    hsla(0, 0%, 100%, 0.1));
+}
+@keyframes kyle {
+    0%{border-color: aqua;}
+    25%{border-color: rgb(217, 255, 0);}
+    75%{border-color: rgb(247, 0, 255);}
+    100%{border-color: rgb(0, 255, 13);}
+}
+#button{
+    text-align: center;
+    margin-left: 2vw;
+    border-radius: 10px;
+    background-color: #3AB0FF;
+    border: none;
+    padding: 5px;
+    width: 28%;
+    color: white;
+    box-shadow: -2px -2px 6px 2px red;
+}
+#button1{
+    text-align: center;
+    margin-left: 2vw;
+    border-radius: 10px;
+    background-color: #3AB0FF;
+    border: none;
+    padding: 5px;
+    width: 28%;
+    color: white;
+    box-shadow: -2px -2px 6px 2px red;
+}
+#button2{
+    text-align: center;
+    margin-left: 2vw;
+    border-radius: 10px;
+    background-color: #3AB0FF;
+    border: none;
+    padding: 5px;
+    width: 28%;
+    color: white;
+    box-shadow: -2px -2px 6px 2px red;
+}
+#p{
+    display: flex;
+    width: 126%;
+}
+abbr{
+    text-decoration: none;
+}
+input{
+    text-align: end;
+}
+#com{
+    width: 286px;
+    height: 99px;
+    resize: none;
+    cursor: default;
+    text-align: center;
+}
+#mod{
+    position: absolute;
+}
+#bdy{
+    visibility: hidden;
+}
+@media only screen and (max-width: 600px) {
+    *{
+        overflow: hidden;
+    }
+    #x{
+        visibility: visible;
+    }
+    body{
+        background-image: url(https://source.unsplash.com/600x900/?nature,tree), linear-gradient(rgb(219, 166, 166), rgb(0, 0, 172));
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+    .container{
+        width: 70vw;
+    }
+    #mod{
+        width: 94%;
+        height: 77vh;
+    }
+    #bdy{
+        width: 96%;
+    }
+    #com{
+        width: 236px;
+    }
+    #p{
+        width: 158%;
+    }
+    #button1{
+        box-shadow: none;
+    }
+    #button2{
+        box-shadow: none;
+    }
+    #button{
+        box-shadow: none;
+    }
+    label{
+        margin-top: 10px;
+    }
+}</style>
+</head>
+<body>
+    <span id="x"></span>
+    <div id="mod">
+        <div class="container">
+                <label for="pp"><abbr title="Maximum value 200">User-ID</abbr></label>
+                <input class="ch" id="pp" type="text" placeholder="Enter ID" maxlength="3" >
+                <input id="button" type="submit" value="CHECK">
+        </div>
+    </div>
+    <div id="bdy">
+        <div class="container">
+            <div id="form">
+                <label for="id">User-ID</label>
+                <input class="ch" id="id" type="text" readonly>
+                <label for="uid">Unique-ID</label>
+                <input class="ch" id="uid" type="text" readonly>
+                <label for="tt">Task Status</label>
+                <input class="ch" id="tt" type="text" readonly>
+                <label for="com">Comment</label>
+                <!-- <input class="ch" id="com" type="text"> -->
+                <textarea name="text" class="ch" id="com" cols="20" rows="10" readonly></textarea>
+                <p id="pol"></p>
+                <div id="p">
+                    <input id="button1" type="submit" value="BACK">
+                    <input id="button2" type="submit" value="Translate">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js">
+let btn2=document.getElementById('button2');
+let btn1=document.getElementById('button1');
+btn2.addEventListener('click',()=>{
+    let text=document.getElementById('com').value;
+    let api=`https://api.mymemory.translated.net/get?q=${text}&langpair=la|en`; //to change from to change la(from)|en(to)
+    // console.log(api);
+    fetch(api).then((response) => {
+        if (!response.ok) {
+            alert("No DATA found.");
+            throw new Error("No DATA found.");
+        }
+        return response.json();
+    })
+    .then((data) => displayyDATA(data));
+    // .then((data) => console.log(data));
+    function displayyDATA(data){
+        document.getElementById('com').value=data.responseData.translatedText;
+    }
+});
+btn1.addEventListener('click',()=>{
+    window.location='index.html';
+});
+let x=document.getElementById('com');
+x.addEventListener('click',()=>{
+    let uutr;
+    uutr=new SpeechSynthesisUtterance(x.value);
+    uutr.lang='en-US';
+    speechSynthesis.speak(uutr);
+});
+// let text=document.getElementById('com').value;
+// let api=`https://api.mymemory.translated.net/get?q=${text}&langpair=la|bn`;
+// console.log(api);
+// fetch(api).then((response) => {
+//     if (!response.ok) {
+//         alert("No DATA found.");
+//         throw new Error("No DATA found.");
+//     }
+//     return response.json();
+// })
+// // .then((data) => displayyDATA(data));
+// .then((data) => console.log(data));
+
+// function displayyDATA(data){
+//     document.getElementById('com').value=data.responseData.translatedText;
+// }
+// const dima=document.getElementsByTagName('body')[0];
+// const dima=document.getElementById('pol');
+// let image='https://aws.random.cat/meow';
+// let image='https://nekos.best/api/v2/neko';
+// fetch('https://random-d.uk/api').then(res=>res.json()).then((data)=>{dima.innerHTML=`<img src="${data.file}"/>`;console.log(data)});</script>
+<script src="script1.js">console.log('WORKING');
+let n = 1;
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+    .then(response => response.text())
+    .then(json => console.log(json))
+
+document.getElementById('button').addEventListener('click', () => {
+    document.getElementById('mod').style.visibility = "hidden";
+    document.getElementById('bdy').style.visibility = "visible";
+    let pp = document.getElementById('pp').value;
+    fetch('https://jsonplaceholder.typicode.com/todos/' + pp)
+    .then((response) => {
+        if (!response.ok) {
+            alert("No DATA found.");
+            throw new Error("No DATA found.");
+        }
+        return response.json();
+    })
+    .then((data) => this.displayDATA(data));
+});
+function displayDATA(data) {
+    const { id } = data;
+    const { userId } = data;
+    const { title } = data;
+    const { completed } = data;
+    document.getElementById('id').value = id;
+    document.getElementById('uid').value = userId;
+    document.getElementById('tt').value = completed;
+    document.getElementById('com').innerText = title;
+}
+let c=document.getElementById('x');
+c.innerText="Created By Romijul";
+c.style.color='red';
+    // let x=prompt('Enter Number ');
+    
+// fetch('https://jsonplaceholder.typicode.com/todos/'+pp)
+// .then((response) => {
+//     if (!response.ok) {
+//         alert("No DATA found.");
+//         throw new Error("No DATA found.");
+//     }
+//     return response.json();
+// })
+// .then((data)=>this.displayDATA(data));
+
+
+</script>
+</html>
