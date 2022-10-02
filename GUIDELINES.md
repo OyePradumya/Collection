@@ -1,7 +1,6 @@
 > ELIGIBILTY -
 
-* All PRs should be related to a particular Sector.
-* It could be any themed website, application, single webpage etc.
+* PR could be any themed website, application, single webpage etc.
 * Make sure you don't copy paste someone else's code like generic templates, similarity between PRs etc.
 * Your Project should accompany a README.md file with details about what your project is all about and how to run.
 * Create a folder with your project title, put all your project files and push the entire folder.
