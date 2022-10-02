@@ -6,6 +6,220 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Tic_Tac_Toe</title>
+    <style>
+    *{
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden;
+    /* box-sizing: content-box; */
+}
+h1{
+    cursor: default;
+    position: absolute;
+    top:50px;
+    left: 38.5rem;
+    box-shadow: 5px 2px 5px red;
+    display: inline;
+    transition: 1s;
+}
+marquee{
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(100, 148, 237, 0.514) ;
+    color: white;
+}
+h2{
+    position: absolute;
+    top:111px;
+    left: 44rem;
+    box-shadow: 5px 2px 5px red;
+    display: inline;
+    cursor: pointer;
+    transition: 1s;
+}
+.hover:hover{
+    background-color: rgba(64, 255, 0, 0.758);
+    border-radius: 10px;
+    padding-left: 5px;
+    /* transform: skewX(15deg); */
+    transform: translate(10px, 10px);
+}
+/* #banner{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #3500ff;
+    width: 31rem;
+    height: 31rem;
+    position: absolute;
+    top: 11rem;
+    left: 33rem;
+    border-radius: 23px;
+    color: yellow;
+    font-size: 2rem;
+    text-shadow: 7px 1px 5px red;
+} */
+#banner {
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    background-color: #3500ff;
+    width: 31vw;
+    height: 70vh;
+    position: absolute;
+    top: 22vh;
+    left: 33rem;
+    border-radius: 23px;
+    color: yellow;
+    font-size: 2rem;
+    text-shadow: 7px 1px 5px red;
+}
+/* #win_banner{
+    visibility: hidden;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #3500ff;
+    width: 31rem;
+    height: 31rem;
+    position: absolute;
+    top: 11rem;
+    left: 33rem;
+    border-radius: 23px;
+    color: yellow;
+    font-size: 5rem;
+    text-shadow: 7px 1px 5px red;
+} */
+
+#win_banner {
+    visibility: hidden;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    background-color: #3500ff;
+    width: 32vw;
+    height: 69vh;
+    position: absolute;
+    top: 22vh;
+    left: 34vw;
+    border-radius: 23px;
+    color: yellow;
+    font-size: 5rem;
+    text-shadow: 7px 1px 5px red;
+}/* #background{
+    width: 32vw;
+    height: 62vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    top: 12rem;
+    left: 34rem;
+} */
+#background{
+    width: 38vw;
+    height: 74vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    top: 9rem;
+    left: 30rem;
+    /* right: 20rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+td:hover{
+    background-color: greenyellow;
+}
+#img{
+    width: 100vw;
+    height: 200vh;
+}
+#tbl{
+    /* background-color: rgba(47, 223, 38, 0.548); */
+    table-layout: fixed;
+    border-radius: 10px;
+    width: 28rem;
+    height: 30rem;
+    border-spacing: 10px;
+    animation: bg infinite 20s;
+}
+#tbl td{
+    border-radius: 10px;
+    /* background-color: rgba(255, 255, 255, 0.895); */
+    box-shadow: 0px -1px 4px 0px #100310;
+    /* animation: bgg 10s infinite; */
+}
+#icons{
+    position: relative;
+    left: 17px;
+    top: 2px;
+}
+
+td {
+    height: 8rem;
+    width: 8rem;
+    color: red;
+    font-size: 114px;
+    font-weight: 600;
+    text-align: center;
+}
+@keyframes bg {
+    from {background-color: rgba(255, 0, 0, 0.308);}
+    to {background-color: rgba(255, 255, 0, 0.286);}
+}
+@keyframes bgg {
+    from {filter: hue-rotate(0deg);}
+    to {filter: hue-rotate(90deg);}
+}
+/* #icons{
+    width: 80px;
+    height: auto;
+} */
+@media only screen and (max-width:430px) {
+    h1 {
+        left: 3.5rem;
+    }
+    h2{
+        left: 7rem;
+    }
+    #background {
+        width: 105vw;
+        height: 74vh;
+        top: 9rem;
+        left: -1rem;
+    }
+    #tbl{
+        width: 20rem;
+        height: 23rem;
+    }
+    #banner {
+        background-color: #3500ff;
+        width: 27rem;
+        height: 28rem;
+        top: 15rem;
+        left: 0rem;
+    }
+    #win_banner{
+        width: 28rem;
+        height: 29rem;
+        top: 15rem;
+        left: 0rem;
+    }
+    #img {
+        width: 232vw;
+        height: 200vh;
+    }
+    
+}
+    </style>
 </head>
 <body id="body">
     <marquee behavior="scroll" direction="left">Created by Romijul Laskar (❁´◡`❁)</marquee>
@@ -37,3 +251,86 @@
 </body>
 <script src="script.js"></script>
 </html>
+<script type="text/javascript">
+  let z = "X";
+let p = 9;
+let audioTurn = new Audio("ting.mp3");
+let winner = new Audio("applause.mp3");
+// let C = prompt("1. Play With Opponent.\n2. Play With Machine.");
+
+function change() {
+    if (z == 'X') {
+        z = 'O';
+    }
+    else {
+        z = 'X';
+    }
+}
+function namee() {
+    if (z == 'X') {
+        document.getElementById('h2').innerText = "Your turn 'X'";
+    }
+    else {
+        document.getElementById('h2').innerText = "Opponent turn 'O'";
+    }
+}
+function clic(m) {
+    audioTurn.play();
+    document.getElementById(m).innerHTML = z;
+    p--;
+    change();
+    checkwin();
+    namee();
+    draw();
+}
+function began() {
+    document.getElementById('banner').style.visibility = "hidden";
+    namee();
+    openFullscreen();
+}
+function checkwin() {
+    var a1, a2, a3, b1, b2, b3, c1, c2, c3;
+    a1 = document.getElementById("1").innerText;
+    a2 = document.getElementById("2").innerText;
+    a3 = document.getElementById("3").innerText;
+    b1 = document.getElementById("4").innerText;
+    b2 = document.getElementById("5").innerText;
+    b3 = document.getElementById("6").innerText;
+    c1 = document.getElementById("7").innerText;
+    c2 = document.getElementById("8").innerText;
+    c3 = document.getElementById("9").innerText;
+
+    if ((a1 == 'O' && a2 == 'O' && a3 == 'O') || (b1 == 'O' && b2 == 'O' && b3 == 'O') || (c1 == 'O' && c2 == 'O' && c3 == 'O') || (a1 == 'O' && b1 == 'O' && c1 == 'O') || (b2 == 'O' && a2 == 'O' && c2 == 'O') || (a3 == 'O' && b3 == 'O' && c3 == 'O') || (a1 == 'O' && b2 == 'O' && c3 == 'O') || (a3 == 'O' && b2 == 'O' && c1 == 'O')) {
+        winner.play();
+        document.getElementById('win_banner').style.visibility = "visible";
+        // window.confirm("  X WINNER .");
+        setTimeout(miu, 4000);
+    }
+    if ((a1 == 'X' && a2 == 'X' && a3 == 'X') || (b1 == 'X' && b2 == 'X' && b3 == 'X') || (c1 == 'X' && c2 == 'X' && c3 == 'X') || (a1 == 'X' && b1 == 'X' && c1 == 'X') || (b2 == 'X' && a2 == 'X' && c2 == 'X') || (a3 == 'X' && b3 == 'X' && c3 == 'X') || (a1 == 'X' && b2 == 'X' && c3 == 'X') || (a3 == 'X' && b2 == 'X' && c1 == 'X')) {
+        winner.play();
+        document.getElementById('win_banner').style.visibility = "visible";
+        setTimeout(miu, 4000);
+    }
+}
+function draw() {
+    if (p < 1) {
+        document.getElementById('banner').style.visibility = "visible";
+        document.getElementById('banner').innerText = "-----DRAW-----";
+        setTimeout(miu, 2000);
+    }
+}
+function miu() {
+    window.location.reload();
+}
+function openFullscreen() {
+    var elem = document.getElementById('body');
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+    }
+    
+}
+</script>
