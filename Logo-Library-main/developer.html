@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+
+    <title>Logo Library</title>
+</head>
+<body onload="myFunc()">
+
+    <div id="preloader"></div>
+
+    <nav class="transparent">
+        <div class="navigation">
+            <div class="toggle"><span></span></div>
+            <ul class="main_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="developer.html">Developer Info</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a class="contact" href="https://forms.gle/F7sYQULguVYdxQf27" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+
+        <ul class="login_signup">
+            <li><a href="#">Login</a></li>
+            <li class="SignUp"><a class="SignUp_anchor" href="#">Sign Up</a></li>
+        </ul>
+    </nav>  
+
+    <div class="gif">
+        <img src="img/loader.gif" height="50%">
+        <h2>I'm Cool 😎</h2>
+    </div>
+
+    <script>
+        const navigation = document.querySelector('.navigation');
+        document.querySelector('.toggle').onclick = function () {
+            this.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+
+    <script>
+        var loader = document.getElementById("preloader");
+
+        function myFunc() {
+            preloader.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
