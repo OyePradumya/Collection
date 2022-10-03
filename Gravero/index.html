@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Gravero</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/fav.ico" type="image/x-icon" />
+
+    <!-- External Css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/b45c6d8a14.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Navigation Section -->
+
+    <nav>
+      <ul class="navbar">
+        <!-- navbar brand -->
+        <li>
+          <a href="index.html"
+            ><img src="media/Logo/Logo.jpg" alt="navbar-logo" id="logo"
+          /></a>
+        </li>
+
+        <!-- Favourites -->
+        <li><a href="#queue">Favourite</a></li>
+
+        <!-- Search bar -->
+        <li>
+          <a href="#">
+            <div class="search-bar">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" id="search-input" />
+              <i class="fa-solid fa-bell notification"></i>
+              <i class="fa-solid fa-microphone"></i>
+            </div>
+          </a>
+        </li>
+
+        <!-- Display Picture -->
+        <li>
+          <a href="#"
+            ><img
+              src="https://media-exp1.licdn.com/dms/image/C5603AQGUtpEU-HX6zw/profile-displayphoto-shrink_100_100/0/1649388031987?e=1668643200&v=beta&t=ntWBj133CLzkxWzvJuqHgaUgSG8w1keoANpaPVjSKwc"
+              alt=""
+          /></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Sections -->
+
+    <div class="container">
+      <!-- Main section -->
+      <section class="main-content">
+        <!-- Carousel -->
+        <div class="carousel-container">
+          <input type="radio" name="slider" id="item-1" checked />
+          <input type="radio" name="slider" id="item-2" />
+          <input type="radio" name="slider" id="item-3" />
+          <div class="cards">
+            <label class="card" for="item-1" id="song-1">
+              <img
+                src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80"
+                alt="song"
+              />
+            </label>
+            <label class="card" for="item-2" id="song-2">
+              <img
+                src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
+                alt="song"
+              />
+            </label>
+            <label class="card" for="item-3" id="song-3">
+              <img
+                src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+                alt="song"
+              />
+            </label>
+          </div>
+        </div>
+
+        <!-- Latest Release -->
+
+        <h2 class="section-heading">Latest Releases</h2>
+
+        <div class="latest-release">
+          <!-- SONG -->
+          <div class="col-50">
+            <div>
+              <img
+                src="media/latest-release/new-music-1.jpg"
+                alt="new-release"
+              />
+              <p>Bolis <br /><span>Singer</span></p>
+            </div>
+
+            <!--  -->
+            <div id="timing">
+              <label class="dropdown" id="drop-2">
+                <div class="dd-button">...</div>
+
+                <input type="checkbox" class="dd-input" id="test" />
+
+                <ul class="dd-menu">
+                  <li>Play</li>
+                  <li>Add to next</li>
+                </ul>
+              </label>
+
+              <p>4:50</p>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <!-- SONG -->
+            <div>
+              <img
+                src="media/latest-release/new-music-2.jpg"
+                alt="new-release"
+              />
+              <p>Sonia <br /><span>Singer</span></p>
+            </div>
+
+            <!-- DROPDOWN -->
+            <div id="timing">
+              <label class="dropdown" id="drop-2">
+                <div class="dd-button">...</div>
+
+                <input type="checkbox" class="dd-input" id="test" />
+
+                <ul class="dd-menu">
+                  <li>Play</li>
+                  <li>Add to next</li>
+                </ul>
+              </label>
+
+              <p>4:50</p>
+            </div>
+          </div>
+
+          <div class="latest-release">
+            <div class="col-50">
+              <!-- SONG -->
+              <div>
+                <img
+                  src="media/latest-release/new-english-3.jpg"
+                  alt="new-release"
+                />
+                <p>Chimpu <br /><span>Singer</span></p>
+              </div>
+
+              <!-- DROPDOWN -->
+              <div id="timing">
+                <label class="dropdown" id="drop-2">
+                  <div class="dd-button">...</div>
+
+                  <input type="checkbox" class="dd-input" id="test" />
+
+                  <ul class="dd-menu">
+                    <li>Play</li>
+                    <li>Add to next</li>
+                  </ul>
+                </label>
+
+                <p>4:50</p>
+              </div>
+            </div>
+
+            <div class="col-50">
+              <!-- SONG -->
+              <div>
+                <img
+                  src="media/latest-release/new-english-4.jpg"
+                  alt="new-release"
+                />
+                <p>Mrs. Noris <br /><span>Singer</span></p>
+              </div>
+
+              <!-- DROPDOWN -->
+              <div id="timing">
+                <label class="dropdown" id="drop-2">
+                  <div class="dd-button">...</div>
+
+                  <input type="checkbox" class="dd-input" id="test" />
+
+                  <ul class="dd-menu">
+                    <li>Play</li>
+                    <li>Add to next</li>
+                  </ul>
+                </label>
+                <p>4:50</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="section-heading">Popular Artists</h2>
+
+        <!-- Pupular artists -->
+        <div class="popular-artists">
+          <!-- artist 1-->
+          <div class="artist">
+            <div>
+              <a href="/playlist.html">
+                <img
+                  src="media/popular artists/billie eilish.jpg"
+                  alt="Person"
+                />
+              </a>
+            </div>
+            <p>Billie Ellish</p>
+          </div>
+
+          <!-- artist 2-->
+          <div class="artist">
+            <div>
+              <a href="/playlist.html">
+                <img src="media/popular artists/Lil wayne.jpg" alt="Person" />
+              </a>
+            </div>
+            <p>Lil Wayne</p>
+          </div>
+
+          <!-- artist 3-->
+          <div class="artist">
+            <div>
+              <a href="/playlist.html">
+                <img src="media/popular artists/Katy perry.jpg" alt="Person" />
+              </a>
+            </div>
+            <p>Katy Perry</p>
+          </div>
+
+          <!-- artist 4-->
+          <div class="artist">
+            <div>
+              <a href="/playlist.html">
+                <img src="media/popular artists/ed sheeran.jpg" alt="Person" />
+              </a>
+            </div>
+            <p>Ed Sheeran</p>
+          </div>
+
+          <!-- artist 5-->
+          <div class="artist">
+            <div>
+              <a href="/playlist.html">
+                <img src="media/popular artists/drake.jpg" alt="Person" />
+              </a>
+            </div>
+            <p>Drake</p>
+          </div>
+
+          <!-- artist 6-->
+          <div class="artist">
+            <div>
+              <a href="/playlist.html">
+                <img src="media/popular artists/bruno mars.jpg" alt="Person" />
+              </a>
+            </div>
+            <p>Bruno Mars</p>
+          </div>
+        </div>
+
+        <!-- Music Themes -->
+
+        <div class="music-theme-1">
+          <div>
+            <img
+              src="media/music themes/chill.jpg"
+              alt="music-theme"
+              id="main-theme"
+            />
+          </div>
+
+          <div>
+            <img src="media/music themes/love.jpg" alt="music-theme" />
+          </div>
+
+          <div>
+            <img src="media/music themes/pop.jpg" alt="music-theme" />
+          </div>
+
+          <div>
+            <img src="media/music themes/retro.jpg" alt="music-theme" />
+          </div>
+
+          <div>
+            <img src="media/music themes/rock.jpg" alt="music-theme" />
+          </div>
+
+          <div>
+            <img src="media/music themes/workout.jpg" alt="music-theme" />
+          </div>
+        </div>
+
+        <!-- Music theme-2 -->
+
+        <div class="music-theme-2">
+          <div>
+            <p>Remix</p>
+            <img src="media/music themes 2/1.jpg" alt="" />
+          </div>
+
+          <div>
+            <p>Live</p>
+            <img src="media/music themes 2/2.jpg" alt="" />
+          </div>
+
+          <div>
+            <p>Retro</p>
+            <img src="media/music themes 2/33.jpg" alt="" />
+          </div>
+        </div>
+
+        <!-- Latest English -->
+
+        <h2 class="section-heading">Latest English</h2>
+
+        <div class="latest-songs">
+          <!-- song 1 -->
+          <div class="song">
+            <div>
+              <img src="media/latest english/I'll Wait.jpg" alt="eng-song" />
+            </div>
+
+            <p>
+              I'll Wait <br />
+              <span> SEPT 19 ,2022</span>
+            </p>
+          </div>
+
+          <!-- song 2 -->
+          <div class="song">
+            <div>
+              <img src="media/latest english/ily.jpg" alt="eng-song" />
+            </div>
+
+            <p>
+              I Love You <br />
+              <span> SEPT 19 ,2022</span>
+            </p>
+          </div>
+
+          <!-- song 3 -->
+          <div class="song">
+            <div>
+              <img src="media/latest english/let me go.jpg" alt="eng-song" />
+            </div>
+
+            <p>
+              Let Me Go <br />
+              <span> SEPT 19 ,2022</span>
+            </p>
+          </div>
+
+          <!-- song 4 -->
+          <div class="song">
+            <div>
+              <img
+                src="media/latest english/qurantine clean.jpg"
+                alt="eng-song"
+              />
+            </div>
+
+            <p>
+              Quarantine Clean <br />
+              <span> SEPT 19 ,2022</span>
+            </p>
+          </div>
+
+          <!-- song 5 -->
+          <div class="song">
+            <div>
+              <img src="media/latest english/roar.jpg" alt="eng-song" />
+            </div>
+
+            <p>
+              Roar <br />
+              <span> SEPT 19 ,2022</span>
+            </p>
+          </div>
+
+          <!-- song 6 -->
+          <div class="song">
+            <div>
+              <img src="media/latest english/toosie slide.jpg" alt="eng-song" />
+            </div>
+
+            <p>
+              Toosie Slide <br />
+              <span> SEPT 19 ,2022</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Latest Hindi -->
+
+        <h2 class="section-heading">Latest Hindi</h2>
+
+        <div class="latest-songs">
+          <!-- Song 1 -->
+          <div class="song">
+            <div>
+              <img src="media/latest hindi/tere sang yara.jpg" alt="eng-song" />
+            </div>
+
+            <p>
+              Tere Sang Yara <br />
+              <span> SEPT 19 ,2022</span>
+            </p>
+          </div>
+
+          <!-- Song 2 -->
+          <div class="song">
+            <div>
+              <img
+                src="media/latest hindi/tera ban jaunga.jpg"
+                alt="eng-song"
+              />
+            </div>
+
+            <p>
+              Tera Ban Jaunga <br />
+              <span> SEPT 19 ,2022</span>
+            </p>
+          </div>
+
+          <!-- Song 3 -->
+          <div class="song">
+            <div>
+              <img src="media/latest hindi/kaun tujhe.jpg" alt="eng-song" />
+            </div>
+
+            <p>
+              Kaun Tujhe <br />
+              <span> SEPT 19 ,2022</span>
+            </p>
+          </div>
+
+          <!-- Song 4 -->
+          <div class="song">
+            <div>
+              <img
+                src="media/latest hindi/giveme some sunshine.jpg"
+                alt="eng-song"
+              />
+            </div>
+
+            <p>
+              Give Me <br />
+              Some Sunshine <br />
+              <span> SEPT 19 ,2022</span>
+            </p>
+          </div>
+
+          <!-- Song 5 -->
+          <div class="song">
+            <div>
+              <img src="media/latest hindi/galiyaan.jpg" alt="eng-song" />
+            </div>
+
+            <p>
+              Galiyaan <br />
+              <span> SEPT 19 ,2022</span>
+            </p>
+          </div>
+
+          <!-- song 6 -->
+          <div class="song">
+            <div>
+              <img src="media/latest hindi/baarish.jpeg" alt="eng-song" />
+            </div>
+
+            <p>
+              Baarish <br />
+              <span> SEPT 19 ,2022</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- <div class="space"></div> -->
+
+        <!-- main content ending here -->
+      </section>
+
+      <!-- Queue section -->
+
+      <section class="queue">
+        <!-- queue heading -->
+        <div class="queue-heading">
+          <h2>Queue</h2>
+          <label class="dropdown">
+            <div class="dd-button">Queue</div>
+
+            <input type="checkbox" class="dd-input" id="test" />
+
+            <ul class="dd-menu">
+              <li>Playlist</li>
+              <li>Favourite Song</li>
+            </ul>
+          </label>
+        </div>
+
+        <!-- Queue list -->
+
+        <div class="queue-list" id="queue">
+          <ol>
+            <li>
+              <div class="queue-song">
+                <div>
+                  <img src="media/songs/DaBaby.jpg" alt="song" />
+                  <p>DaBaby<br /><span>Singer</span></p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+
+            <li>
+              <div class="queue-song">
+                <div>
+                  <img src="media/songs/dynamite.jpg" alt="song" />
+                  <p>Dynamite<br /><span>Singer</span></p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+
+            <li>
+              <div class="queue-song">
+                <div>
+                  <img src="media/songs/falling.jpg" alt="song" />
+                  <p>Falling<br /><span>Singer</span></p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+
+            <li>
+              <div class="queue-song">
+                <div>
+                  <img src="media/songs/havana.jpg" alt="song" />
+                  <p>Havana<br /><span>Singer</span></p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+
+            <li>
+              <div class="queue-song">
+                <div>
+                  <img src="media/songs/shit.png" alt="song" />
+                  <p>Shit<br /><span>Singer</span></p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+
+            <li>
+              <div class="queue-song">
+                <div>
+                  <img src="media/songs/sorry.jpg" alt="song" />
+                  <p>Sorry<br /><span>Singer</span></p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+
+            <li>
+              <div class="queue-song">
+                <div>
+                  <img src="media/songs/Weeknd.jpg" alt="song" />
+                  <p>Weekend<br /><span>Singer</span></p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+
+            <li>
+              <div class="queue-song">
+                <div>
+                  <img src="media/songs/willow.jpeg" alt="song" />
+                  <p>Willow<br /><span>Singer</span></p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+
+            <li>
+              <div class="queue-song">
+                <div>
+                  <img src="media/songs/DaBaby.jpg" alt="song" />
+                  <p>DaBaby<br /><span>Singer</span></p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+
+            <li>
+              <div class="queue-song">
+                <div>
+                  <img src="media/songs/dynamite.jpg" alt="song" />
+                  <p>Dynamite<br /><span>Singer</span></p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+
+            <li>
+              <div class="queue-song">
+                <div>
+                  <img src="media/songs/falling.jpg" alt="song" />
+                  <p>Falling<br /><span>Singer</span></p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+
+            <li>
+              <div class="queue-song">
+                <div>
+                  <img src="media/songs/havana.jpg" alt="song" />
+                  <p>Havana<br /><span>Singer</span></p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+
+            <li>
+              <div class="queue-song">
+                <div>
+                  <img src="media/songs/shit.png" alt="song" />
+                  <p>Shit<br /><span>Singer</span></p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+
+            <li>
+              <div class="queue-song">
+                <div>
+                  <img src="media/songs/sorry.jpg" alt="song" />
+                  <p>Sorry<br /><span>Singer</span></p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+
+            <li>
+              <div class="queue-song">
+                <div>
+                  <img src="media/songs/Weeknd.jpg" alt="song" />
+                  <p>Weekend<br /><span>Singer</span></p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+
+            <li>
+              <div class="queue-song">
+                <div>
+                  <img src="media/songs/willow.jpeg" alt="song" />
+                  <p>Willow<br /><span>Singer</span></p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+          </ol>
+        </div>
+        <!-- queue list ending here -->
+      </section>
+
+      <!-- Player section -->
+      <section class="player">
+        <!-- currently playing sonngs -->
+        <div class="currently-playing-song">
+          <div>
+            <img src="media/songs/havana.jpg" alt="currently-playing-song" />
+            <p>
+              Havana <br />
+              <span>Camila Cabello</span>
+            </p>
+          </div>
+
+          <div>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-ban"></i>
+          </div>
+        </div>
+        <!-- Media controllers -->
+        <div class="media-controls">
+          <div class="controls">
+            <i class="fa-solid fa-repeat"></i>
+
+            <i class="fa-solid fa-backward"></i>
+
+            <i class="fa-regular fa-circle-play"></i>
+
+            <i class="fa-solid fa-forward"></i>
+
+            <i class="fa-solid fa-shuffle"></i>
+          </div>
+
+          <!-- timeline slider -->
+          <div class="slider">
+            <p>1:39</p>
+            <input type="range" min="1" max="100" />
+            <p>5:23</p>
+          </div>
+        </div>
+        <!-- ohter controls -->
+        <div class="other-controls">
+          <i class="fa-solid fa-share-nodes"></i>
+
+          <i class="fa-solid fa-tower-broadcast"></i>
+
+          <i class="fa-solid fa-download"></i>
+
+          <i class="fa-solid fa-mobile-screen"></i>
+        </div>
+      </section>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
