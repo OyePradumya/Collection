@@ -11,7 +11,7 @@
 <a href="https://github.com/OyePradumya/Collection/pulls"><img src="https://img.shields.io/github/issues-pr-raw/OyePradumya/Collection?style=for-the-badge" alt="open pull request"></a>
 <a href="https://github.com/OyePradumya/Collection/pulls"><img src="https://img.shields.io/github/issues-pr-closed-raw/OyePradumya/Collection?style=for-the-badge" alt="closed pull request"></a>
 
-<a href="https://hacktoberfest.com/"><img src="https://img.shields.io/badge/-Hacktoberfest-blue" alt="hacktoberfest">
+<img src="https://img.shields.io/github/hacktoberfest/2022/OyePradumya/Collection?style=for-the-badge" alt="hacktoberfest">
 <img src="https://img.shields.io/github/last-commit/OyePradumya/Collection?style=for-the-badge" alt="last contributions">
 <a href="https://api.github.com/repos/OyePradumya/Collection/contributors"><img src="https://img.shields.io/github/contributors/OyePradumya/Collection?style=for-the-badge" alt="total contributors"></a>
 </p>
@@ -43,5 +43,4 @@ Working with open source project is a rewarding experience that allows you to pr
 You must register and make four valid pull requests (PRs) between October 1-31 (in any time zone). PRs made before or after that won't be counted!!
 
 Visit the hactoberfest site for more details :- https://hacktoberfest.digitalocean.com
-
 
