@@ -34,4 +34,4 @@ jobs:
           MERGE_RETRY_SLEEP: "10000"
           MERGE_REQUIRED_APPROVALS: "1"
           MERGE_ERROR_FAIL: "true"
-          GITHUB_TOKEN: "${{ secrets.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 }}"
+          GITHUB_TOKEN: "${{ secrets.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 }}"
