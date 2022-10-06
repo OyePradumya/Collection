@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Shop | Mahendra</title>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/9e2213edf0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <!-- Logo -->
+        <a href="./index.html" class="logo">Fruit Shop</a>
+
+        <!-- Navigation -->
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <!-- Search & Cart -->
+        <div class="left-nav">
+          <a href="#"><i class="fas fa-search"></i></a>
+          <a href="#"><i class="fas fa-cart-arrow-down"></i></a>
+        </div>
+
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+      </header>
+
+      <!-- User Input Section -->
+      <section class="user-input">
+        <div class="user-amount">
+          <h1>Submit Your Amount:</h1>
+          <div class="amount">
+            <input id="userAmount" type="text" />
+            <button onclick="submitAmount()">Submit</button>
+          </div>
+          <p>Your Amount Rs: <span id="amountEntered">0</span></p>
+        </div>
+      </section>
+
+      <!-- Products Section -->
+      <section class="products">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="./images/Apple.png" alt="apple" />
+          </div>
+
+          <div class="product-description">
+            <h2 class="product-name"><a href="#">Apple</a></h2>
+
+            <div class="rating">
+              <span>☆</span><span>☆</span><span>☆</span><span>☆</span
+              ><span>☆</span>
+            </div>
+
+            <p id="applePrice">Rs: 10</p>
+            <div class="buttons">
+              <button class="btn-plus" onclick="increaseItem('apple' , 'applePrice')">+</button>
+              <input type="text" id="apple" value="0" />
+              <button class="btn-minus" onclick="decreaseItem('apple' , 'applePrice')">-</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <div class="product-img">
+            <img src="./images/Orange.png" alt="apple" />
+          </div>
+
+          <div class="product-description">
+            <h2 class="product-name"><a href="#">Orange</a></h2>
+
+            <div class="rating">
+              <span>☆</span><span>☆</span><span>☆</span><span>☆</span
+              ><span>☆</span>
+            </div>
+
+            <p id="orangePrice">Rs: 20</p>
+            <div class="buttons">
+              <button class="btn-plus" onclick="increaseItem('orange' , 'orangePrice')">+</button>
+              <input type="text" id="orange" value="0" />
+              <button class="btn-minus" onclick="decreaseItem('orange' , 'orangePrice')">-</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <div class="product-img">
+            <img src="./images/Mango.png" alt="apple" />
+          </div>
+
+          <div class="product-description">
+            <h2 class="product-name"><a href="#">Mango</a></h2>
+
+            <div class="rating">
+              <span>☆</span><span>☆</span><span>☆</span><span>☆</span
+              ><span>☆</span>
+            </div>
+
+            <p id="mangoPrice">Rs: 30</p>
+            <div class="buttons">
+              <button class="btn-plus" onclick="increaseItem('mango' , 'mangoPrice')">+</button>
+              <input type="text" id="mango" value="0" />
+              <button class="btn-minus" onclick="decreaseItem('mango' , 'mangoPrice')">-</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="amount-details">
+        <h3>Your Total: Rs <span id="userTotalAmount">0</span></h3>
+        <h3>No: Of Items: <span id="numOfItem">0</span></h3>
+        <h3>Your Balance: Rs <span id="balance">0</span></h3>
+      </div>
+    </main>
+
+    <!-- JS File -->
+    <script src="./script/script.js"></script>
+  </body>
+</html>
