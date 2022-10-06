@@ -1,0 +1,36 @@
+name: automerge
+on:
+  pull_request:
+    types:
+      - labeled
+      - unlabeled
+      - synchronize
+      - opened
+      - edited
+      - ready_for_review
+      - reopened
+      - unlocked
+  pull_request_review:
+    types:
+      - submitted
+  check_suite:
+    types:
+      - completed
+  status: {}
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    steps:
+      - id: automerge
+        name: automerge
+        uses: "pascalgn/automerge-action@v0.15.3"
+        env:
+          MERGE_LABELS: "complete,hacktoberfest-accepted"
+          MERGE_REMOVE_LABELS: "spam,invalid,Need-Author-Feedback,incomplete,copied,duplicate"
+          MERGE_METHOD: "squash"
+          MERGE_COMMIT_MESSAGE: "{pullRequest.number} met all requirements of this repo, thus merging it to main."
+          MERGE_FORKS: "true"
+          MERGE_RETRIES: "6"
+          MERGE_RETRY_SLEEP: "10000"
+          MERGE_REQUIRED_APPROVALS: "1"
+          MERGE_ERROR_FAIL: "true"
