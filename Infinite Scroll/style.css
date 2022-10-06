@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #3498db;
+}
+
+.container{
+    min-width: 20rem;
+    width: 70vW;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h1{
+    font-size: 4rem;
+}
+
+.container .posts{
+    margin-top: 4rem;
+    background-color: antiquewhite;
+    padding: 2rem 5rem;
+    border-radius: 1rem;
+    box-shadow: 0 2rem 2rem -1.7rem rgba(0, 0, 0, 0.3);
+}
+
+.post-id{
+    width: 5rem;
+    height: 5rem;
+    background-color: teal;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+}
+
+.title{
+    font-size: 2.5rem;
+    margin: 2rem 0 1rem 0;
+    text-transform: capitalize;
+}
+
+.post-info{
+    font-size: 1.7em;
+}
