@@ -25,7 +25,7 @@ jobs:
         name: automerge
         uses: "pascalgn/automerge-action@v0.15.3"
         env:
-          GITHUB_TOKEN: "${{ secrets.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 }}"
+          GITHUB_TOKEN: "${{ secrets.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 }}"
           MERGE_LABELS: "complete,hacktoberfest-accepted"
           MERGE_REMOVE_LABELS: "spam,invalid,Need-Author-Feedback,incomplete,copied,duplicate"
           MERGE_METHOD: "squash"
