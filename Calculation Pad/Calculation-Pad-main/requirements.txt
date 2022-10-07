@@ -1,0 +1,9 @@
+Keras==2.4.3
+tensorflow-cpu==2.4.1
+pandas==1.2.3
+opencv-python-headless==4.2.0.32
+numpy==1.19.5
+wolframalpha==5.0.0
+streamlit==0.84.1
+streamlit-drawable-canvas==0.8.0
+h5py==2.10.0
