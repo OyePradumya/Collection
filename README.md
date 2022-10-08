@@ -44,4 +44,3 @@ You must register and make four valid pull requests (PRs) between October 1-31 (
 
 Visit the hactoberfest site for more details :- https://hacktoberfest.digitalocean.com
 
-
