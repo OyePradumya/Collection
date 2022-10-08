@@ -1,0 +1,206 @@
+@font-face {
+	font-family: 'Pe-icon-7-weather';
+	src:url('../fonts/Pe-icon-7-weather.eot?-ujaud2');
+	src:url('../fonts/Pe-icon-7-weather.eot?#iefix-ujaud2') format('embedded-opentype'),
+		url('../fonts/Pe-icon-7-weather.woff?-ujaud2') format('woff'),
+		url('../fonts/Pe-icon-7-weather.ttf?-ujaud2') format('truetype'),
+		url('../fonts/Pe-icon-7-weather.svg?-ujaud2#Pe-icon-7-weather') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="pe-7w-"], [class*=" pe-7w-"] {
+	display: inline-block;
+	font-family: 'Pe-icon-7-weather';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.pe-7w-wind:before {
+	content: "\e600";
+}
+.pe-7w-wind-sun:before {
+	content: "\e601";
+}
+.pe-7w-wind-moon:before {
+	content: "\e602";
+}
+.pe-7w-upload:before {
+	content: "\e603";
+}
+.pe-7w-umbrella:before {
+	content: "\e604";
+}
+.pe-7w-thermometer-full:before {
+	content: "\e605";
+}
+.pe-7w-thermometer-3-4:before {
+	content: "\e606";
+}
+.pe-7w-thermometer-1-4:before {
+	content: "\e607";
+}
+.pe-7w-thermometer-1-2:before {
+	content: "\e608";
+}
+.pe-7w-thermometer-0:before {
+	content: "\e609";
+}
+.pe-7w-sunset:before {
+	content: "\e60a";
+}
+.pe-7w-sunrise:before {
+	content: "\e60b";
+}
+.pe-7w-sun:before {
+	content: "\e60c";
+}
+.pe-7w-snow:before {
+	content: "\e60d";
+}
+.pe-7w-snow-sun:before {
+	content: "\e60e";
+}
+.pe-7w-snow-moon:before {
+	content: "\e60f";
+}
+.pe-7w-snow-alt:before {
+	content: "\e610";
+}
+.pe-7w-snow-alt-sun:before {
+	content: "\e611";
+}
+.pe-7w-snow-alt-moon:before {
+	content: "\e612";
+}
+.pe-7w-rain:before {
+	content: "\e613";
+}
+.pe-7w-rain-sun:before {
+	content: "\e614";
+}
+.pe-7w-rain-moon:before {
+	content: "\e615";
+}
+.pe-7w-rain-alt:before {
+	content: "\e616";
+}
+.pe-7w-rain-alt-sun:before {
+	content: "\e617";
+}
+.pe-7w-rain-alt-moon:before {
+	content: "\e618";
+}
+.pe-7w-moon:before {
+	content: "\e619";
+}
+.pe-7w-lightning:before {
+	content: "\e61a";
+}
+.pe-7w-lightning-sun:before {
+	content: "\e61b";
+}
+.pe-7w-lightning-rain:before {
+	content: "\e61c";
+}
+.pe-7w-lightning-rain-sun:before {
+	content: "\e61d";
+}
+.pe-7w-lightning-rain-moon:before {
+	content: "\e61e";
+}
+.pe-7w-lightning-moon:before {
+	content: "\e61f";
+}
+.pe-7w-light:before {
+	content: "\e620";
+}
+.pe-7w-hurricane:before {
+	content: "\e621";
+}
+.pe-7w-hail:before {
+	content: "\e622";
+}
+.pe-7w-hail-sun:before {
+	content: "\e623";
+}
+.pe-7w-hail-moon:before {
+	content: "\e624";
+}
+.pe-7w-fog:before {
+	content: "\e625";
+}
+.pe-7w-fog-sun:before {
+	content: "\e626";
+}
+.pe-7w-fog-moon:before {
+	content: "\e627";
+}
+.pe-7w-drizzle:before {
+	content: "\e628";
+}
+.pe-7w-drizzle-sun:before {
+	content: "\e629";
+}
+.pe-7w-drizzle-moon:before {
+	content: "\e62a";
+}
+.pe-7w-drizzle-alt:before {
+	content: "\e62b";
+}
+.pe-7w-drizzle-alt-sun:before {
+	content: "\e62c";
+}
+.pe-7w-drizzle-alt-moon:before {
+	content: "\e62d";
+}
+.pe-7w-download:before {
+	content: "\e62e";
+}
+.pe-7w-degree-farenheit:before {
+	content: "\e62f";
+}
+.pe-7w-degree-celcius:before {
+	content: "\e630";
+}
+.pe-7w-compass:before {
+	content: "\e631";
+}
+.pe-7w-compass-west:before {
+	content: "\e632";
+}
+.pe-7w-compass-south:before {
+	content: "\e633";
+}
+.pe-7w-compass-north:before {
+	content: "\e634";
+}
+.pe-7w-compass-east:before {
+	content: "\e635";
+}
+.pe-7w-cloud:before {
+	content: "\e636";
+}
+.pe-7w-cloud-wind:before {
+	content: "\e637";
+}
+.pe-7w-cloud-wind-sun:before {
+	content: "\e638";
+}
+.pe-7w-cloud-wind-moon:before {
+	content: "\e639";
+}
+.pe-7w-cloud-sun:before {
+	content: "\e63a";
+}
+.pe-7w-cloud-moon:before {
+	content: "\e63b";
+}
