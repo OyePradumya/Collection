@@ -1,0 +1,14 @@
+.body{
+    margin: 20px auto;
+}
+.input{
+     border-radius: 10px;
+    background-color: #FFE6BC;
+    border-color: #8E806A;
+}
+.btn{
+    background-color:#E4CDA7;
+    border-radius: 10px;
+    margin-left: 30px;
+    border-color: #8E806A;
+}
