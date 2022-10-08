@@ -1,0 +1,59 @@
+html{
+    background-color: rgb(78 107 138 / 32%);;
+} 
+
+img{
+    height: 110%;
+    width: 110%;
+}
+
+.clock {
+    height: 50vh;
+    width: 50vh;
+    border: 1px rgb(251, 255, 3);
+    border-radius: 50%;
+    position:absolute;
+    margin-left: 70vh;
+    margin-top: 30vh;
+    box-shadow: rgb(248, 191, 2) 20px 70px 50px 50px ;
+    z-index: 1;
+}
+
+.hour{
+    border-top: 10px solid rgb(36, 211, 62);
+    width:75px;
+    position:absolute;
+    border-radius:50% 50%;  
+    left: 55%;
+    top: 50%;
+    animation:hour 42300s linear infinite;
+    transform-origin: bottom left;     
+}
+
+.minute{
+    border-top: 7px solid coral ;
+    width:100px;
+    position: absolute;
+    border-radius:50% 50%;
+    left: 55%;
+    top:50%;
+    animation:hour 3600s linear infinite; 
+    transform-origin: bottom left;    
+}
+
+.second{
+    border-top: 5px solid black;
+    width: 170px;
+    position: absolute;
+    border-radius:50% 50%;
+    left:55%;
+    top: 50%;
+    animation:hour 60s linear infinite; 
+    transform-origin: bottom left;   
+}
+
+@keyframes hour {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+
+}
