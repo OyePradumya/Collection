@@ -1,0 +1,9 @@
+keras
+tensorflow
+pandas
+numpy
+streamlit
+pandas_datareader
+seaborn
+matplotlib
+datetime
