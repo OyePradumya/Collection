@@ -1,0 +1,86 @@
+{% extends 'info/base.html' %}
+    {% load static %}
+
+    {% block content %}
+                  <div class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-table"></i>
+            <b>Attendance</b></div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                        <th>USN</th>
+                        <th>Student name</th>
+                        <th>Attended classes</th>
+                        <th>Total classes</th>
+                        <th>Attendance %</th>
+                        <th>Classes to attend</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for a in att_list %}
+                    <tr>
+                        <td>{{ a.student_id }}</td>
+                        <td><a href="{% url 't_attendance_detail' a.student.USN a.course_id %}">{{ a.student.name }}</a></td>
+                        <td>{{ a.att_class }}</td>
+                        <td>{{ a.total_class }}</td>
+                        {% if a.attendance < 75 %}
+                            <td class="p-3 mb-2 bg-danger text-white">{{ a.attendance }}</td>
+                        {% else %}
+                            <td class="p-3 mb-2 bg-success text-white">{{ a.attendance }}</td>
+                        {% endif %}
+                        <td>{{ a.classes_to_attend }}</td>
+                    </tr>
+                    {% empty %}
+                            <p>No students</p>
+                    {% endfor %}
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+ <!-- Footer -->
+<footer class="page-footer font-small mdb-color darken-3 pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!--Grid row-->
+    <div class="row d-flex justify-content-center">
+
+      <!--Grid column-->
+      <div class="col-md-6">
+
+        <!-- Video -->
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/3BVQ9Scdglg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a> Sushant Agawane </a>
+    <a> Chaitanya Dhavan </a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+    {% endblock %}
+
+
+
