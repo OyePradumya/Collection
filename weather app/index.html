@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset-Sunrise Portal</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="stylle.css">
+</head>
+<body>
+    <h1 class="h1">Welcome to Sunset & Sunrise portal</h1>
+    <h5>Search Daylength , Sunset time , Sunrise time and twilight time in your location.</h5>
+    <h5>Note: All Timmings Shown here are in UTC Format.You can convert this into IST <a href="https://www.utctime.net/utc-to-ist-indian-converter" target="blank">By clicking here</a></h5>
+    
+            <p>Enter Latitude</p>
+    <div class="mns"> <input type="number"  step="any"  id="lati"></div>
+    <p>Enter Longitude</p>
+    <div class="mns"> <input type="number" step="any" id="longi"></div>
+    <p class="button"><button onclick="search()" style="border: 10px; border-radius: 30px; background-color:lightseagreen ;">Submit</button></p>
+    <script>
+        function search()
+        {
+            var latid = document.querySelector("#lati").value;
+            var longit = document.querySelector("#longi").value;
+            var datet = document.querySelector("#date");
+            $.ajax({
+                type: "GET",
+                url: "https://api.sunrise-sunset.org/json?lat="+latid+"&lng="+longit + "&date=today",
+                success: function(response)
+                {
+                    //console.log(response);
+                    alert("Astronomical Twilight:"+response.results.astronomical_twilight_begin +"\n"+ "Sunrise:" + response.results.sunrise + "\n" + "Sunset:"+ response.results.sunset+"\n"+ "Day Length:"+ response.results.day_length);
+                }
+            })
+        }
+    </script> 
+    <p class="sasdd">Made with ♥ By Aditya Raj Sinha</p>
+</body>
+</html>

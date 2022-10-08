@@ -1,0 +1,35 @@
+body
+        {
+           
+            background-image: url(suns.gif);
+            background-repeat: no-repeat;
+            background-size: 1500px 800px;
+        }
+        .h1
+        {
+            text-align: center;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+        body
+        {
+            font-family: 'Redressed', cursive;
+        }
+        p
+        {
+            text-align: center;
+        }
+        .mns
+        {
+            text-align: center;
+        }
+        h5{
+            text-align: center;
+        }
+        .sasdd
+        {
+            color: blue;
+        }
+        .button
+        {
+            cursor: pointer;
+        }
