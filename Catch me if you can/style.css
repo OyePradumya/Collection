@@ -1,0 +1,18 @@
+body {
+	margin: 0px;
+	text-align: center;
+}
+#box {
+	position: absolute;
+	height: 10vw;
+	width: 10vw;
+	background-color: orangered;
+	padding: 5px;
+	text-align: center;
+	box-sizing: border-box;
+	border-radius: 50%;
+}
+#box p {
+	font-size: 1.7vw;
+	color: white;
+}
