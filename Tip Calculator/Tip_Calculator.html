@@ -1,0 +1,107 @@
+<html>
+<head>
+    <style type="text/css">
+	   #background{
+	               background-color:pink; height:100%; 
+	   }
+	   
+	   #topheading{
+	               background-color:Black; color:white; width:40.8%; height:35px; text-align:center; 
+				   margin-left:30%; font-size:25px; border-radius:15px 15px 0px 0px;
+				   padding-top:3px;
+	   }
+	   #information{
+	                width:40%; margin-left:30%; background-color:white; height:90%; padding-left:10px;
+					padding-top:2px; font-weight:bold;
+	   }
+	   #calculate{
+	              margin-left:200px; background-color:red; color:white; font-weight:bold;
+				  width:150px; height:40px; font-size:17px;	
+	   }
+	   #tipamount{
+	              margin-left:200px;
+	   }
+	   #finalamount{
+	                margin-left:200px;
+	   }
+	   #quality{
+	            width:230px; height:40px; font-size:20px; color:green; font-weight:bold;
+	   }
+	   #output{
+	           margin-left:200px;
+	   }
+	   #output2{
+	            margin-left:200px;
+	   }
+	   
+	   body{
+	         padding:0; margin:0;
+	   }
+	   
+    </style>
+<title>Html,css,javascript</title>
+</head>
+<body>
+   <div id="background">
+      <div id="topheading">TIP CALCULATOR</div>
+      <div id="information">
+	      <p>How much was your Bill ?</p>
+		  Rs. <input type="number" id="billamount">
+		  
+		  <p>How was our service ?</p>
+		  <select id="quality">Choose an option
+		      <option value="0" disabled selected >--Choose an Option--</option>
+		      <option value="0.15">15% - outstanding</option> 
+			     <!-- value inside option is used in loops and in if-else to compare-->
+			  <option value="0.10">10% - Good</option>
+			  <option value="0.05">5% - It was OK</option>
+          </select>
+		  
+		  <p>How many people are sharing the bill ?</p>
+		  <input type="number" id="numberofpeople">people<br><br>
+          
+		  <button id="calculate">CALCULATE!</button>
+          <h2 id="tipamount">TIP AMOUNT</h2>
+		  <h2 id="output"></h2>
+          <h2 id="output2"></h2>
+      </div>
+</div>
+
+   <script type="text/javascript">
+      document.getElementById("calculate").onclick=function(){
+	        var a,b,c,d,e;
+			a=document.getElementById("billamount").value;
+	        b=document.getElementById("quality").value;
+		    c=document.getElementById("numberofpeople").value;			
+	        
+			if(a==="")
+			{
+			   alert("Enter Bill amount");
+               return;
+			}
+			else if(b==="0")
+            {
+               alert("Enter sevice quality");
+			   return;
+            }
+            else if(c==="")			
+            {
+			    alert("people can not be zero");
+				return ;
+			}
+			if(c!=1)
+			{
+			    document.getElementById("output2").innerHTML="each";
+			
+			}
+			d=(a*b)/c;
+			d= Math.round(d);
+			
+			
+			document.getElementById("output").innerHTML=d;
+						
+			
+   }
+   
+   </script>
+</body>
