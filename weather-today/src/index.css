@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(37, 57, 85);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.navbar{
+  padding-top: 8px;
+  padding-bottom: 3px;
+  display: flex;
+  position: relative;
+  box-shadow: rgba(15, 14, 14, 0.678) 0px 2px 24px 0px;
+}
+
+.logo{
+  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 2px 2px 5px rgb(75, 71, 71);
+  margin-right: 67vh;
+
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  background-color: rgb(30 41 59);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-left: 500px;
+  margin-right: 500px;
+  margin-top: 70px;
+  margin-bottom: 292px;
+  height: 550px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+  font-family: 'Poppins';
+  font-weight: normal;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(2, 2, 2, 0.2);
+}
+
+@media (min-width:750px){
+  .card {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
