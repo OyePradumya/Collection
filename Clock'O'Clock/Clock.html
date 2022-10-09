@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <!--CSS-->
+
+     <style>
+        *{ 
+    margin:0;
+    padding:0;
+}
+
+/* .nav-container{
+    width:100%;
+    background-color: rgb(34, 218, 218);
+} */
+.navbar-brand{
+    font-size: 35px;
+    font-weight: 400;
+    font-style: italic;
+    /* background-color: rgba(222, 228, 228, 0.363); */
+}
+
+.jumbotron{
+    width:70%;
+    padding:auto;
+    margin:auto;
+    text-align:center;
+    /* background-color:aqua !important;  */
+    /* background-image: url("time2.png"); */
+    background-repeat: no-repeat;
+    
+    
+}
+#time{
+    font-size:50px;
+    /* font-style: italic; */
+    /* font-weight: 400; */
+}
+#day{
+    font-style: italic;
+    text-decoration: underline;
+}
+/* .bg{
+    background: aqua;
+    background-image: url("time2.png");  
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    opacity: 0.1;
+}  */
+
+.copyright-text{
+    width:30vw;
+    color:black;
+    margin:11% auto 0 auto;
+    font-style: italic;
+    /* margin-bottom:0; */
+    text-align: center;
+}
+
+     </style>
+
+
+
+
+     <!-- <link rel="stylesheet" href="clock.css"></link>    -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Clock O'Clock</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Clock O'Clock</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Time</a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown  
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" >Time is Precious</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+
+      <div class="jumbotron my-4">
+        <div class="bg">
+          
+        <h1 class="display-4"><span style="font-style:italic; font-weight: bolder;">Current Time: </span><span id="time">time</span></h1>
+        <p class="lead">
+          <span id="day">Day</span>
+        </p>
+        <p class="lead">Date format: <b >dd/mm/yy</b></p>
+        
+          
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" id="format" href="#" role="button">Change Format</a>
+        </p>
+        <hr class="my-4">
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Change Theme
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" id="simple" href="#">Simple</a>
+            <a class="dropdown-item" id="pink" href="#">Cherry Blossom</a>
+            <a class="dropdown-item" id="aqua" href="#">Aqua</a>
+            <a class="dropdown-item" id="gold" href="#">Gold</a>
+            
+          </div>
+        </div>
+
+        <br>
+        <p>This clock is made using HTML, CSS and Javascript. </p>
+        
+       
+      </div>
+      </div>
+
+      <div class="copyright-text">
+        © Copyright 2022 Clock O'Clock
+      </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <script>
+        
+let jumbClass=document.getElementsByClassName('jumbotron');
+aqua.addEventListener('click', function(){
+    jumbClass[0].setAttribute("style", "background: aquamarine !important");
+}) 
+simple.addEventListener('click', function(){
+    jumbClass[0].setAttribute("style", "background: white !important");
+})
+pink.addEventListener('click', function(){
+    jumbClass[0].setAttribute("style", "background: pink !important");
+})
+gold.addEventListener('click', function(){
+    jumbClass[0].setAttribute("style", "background:  #C69743  !important");
+    // jumbClass[0].setAttribute("style", "background-img:url(time2.png)");
+    // time.setAttribute("style", "color:purple");
+})
+
+format.addEventListener('click', function(){
+    setInterval(frmt1, 1000);
+    clearInterval(clr);
+    function frmt1(){ 
+    const dt=new Date();
+    let hour=dt.getHours();
+    let min=dt.getMinutes();
+    let sec=dt.getSeconds();
+    if((hour/10)<1)  hour='0'+hour;
+    if((min/10)<1)  min='0'+min;
+    if((sec/10)<1)  sec='0'+sec;
+    tm =  hour+ ':' + min + ':' + sec ;
+    let timeId=document.getElementById('time');
+    timeId.innerHTML=tm+" on "+date;
+    document.getElementById('day').innerHTML=day+'-'+month;
+    console.log(tm);
+}
+})
+
+
+clr=setInterval(setInt, 1000);
+function setInt(){ 
+    dt=new Date();
+
+    let sec=dt.getSeconds();
+    let min=dt.getMinutes();
+    let hour=dt.getHours();
+    let am=1;
+    if((sec/10)<1)  sec='0'+sec;
+    if(hour==12)  am=0;  
+    else if(hour>12)  
+    {
+        hour=hour-12;
+        am=0;
+    }
+    if((min/10)<1)  min='0'+min;
+    if((hour/10)<1)  hour='0'+hour;
+    // tm = dt.getHours() + ':' + dt.getMinutes() + ':' + dt.getSeconds() ;
+    tm =  hour+ ':' + min + ':' + sec ;
+    if(am==1)   tm=tm+" a.m.";
+    else tm=tm+" p.m.";
+
+    // let date=dt.toLocaleDateString();   
+    var dd = String(dt.getDate()).padStart(2, '0');
+    var mm = String(dt.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = dt.getFullYear();
+    date=dd+'/'+ mm + '/' + yyyy;
+    // console.log(dd);
+    // console.log(date.substring(0,2));  
+
+    let timeId=document.getElementById('time');
+    timeId.innerHTML=tm+" on "+date;     
+    // timeId.style.fontWeight='bold';   
+    
+    let day=dt.getDay();
+    let month=dt.getMonth();
+
+    if(day==0)  day='Sunday';
+    else if(day==1) day='Monday';
+    else if(day==2) day='Tuesday';
+    else if(day==3) day='Wednesday';
+    else if(day==4) day='Thursday';
+    else if(day==5) day='Friday';
+    else if(day==6) day='Saturday';
+
+    // console.log(month);
+    if(month==0) month="January";
+    else if(month==1) month="February";
+    else if(month==2) month="March";
+    else if(month==3) month="April";
+    else if(month==4) month="May";
+    else if(month==5) month="June";
+    else if(month==6) month="July";
+    else if(month==7) month="August";
+    else if(month==8) month="September";
+    else if(month==9) month="October";
+    else if(month==10) month="November";
+    else if(month==11) month="December";
+
+    document.getElementById('day').innerHTML=day+'-'+month;
+    // console.log(day);   
+
+    // format.addEventListener('click', function(){
+    //     clearInterval(setInt);
+    //     const dt=new Date();
+    //     let hour=dt.getHours();
+    //     let min=dt.getMinutes();
+    //     let sec=dt.getSeconds();
+    //     if((hour/10)<1)  hour='0'+hour;
+    //     if((min/10)<1)  min='0'+min;
+    //     if((sec/10)<1)  sec='0'+sec;
+    //     tm =  hour+ ':' + min + ':' + sec ;
+    //     timeId.innerHTML=tm+" on "+date;
+    //     // console.log(tm);
+    // })
+
+}
+    </script>
+
+    <!-- <script src="clock.js"></script> -->
+
+</body>
+</html>
