@@ -1,0 +1,84 @@
+{% extends 'info/base.html' %}
+
+    {% block content %}
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-15">
+                    <h2 class="text-center">
+                        Timetable
+                    </h2>
+                </div>
+                <div id="no-more-tables">
+                    <table class="col-sm-15 table table-bordered table-striped table-condensed cf">
+                        <thead class="cf">
+                            <tr>
+                                <th>      </th>
+                               <th>9:00 - 10:00</th>
+				    <th>10:00 - 11:00</th>
+                                    <th>11:00 - 12:00</th>
+                                    <th>12:00 - 1:00</th>
+                                    <th>1:00 - 2:00</th>
+                                    <th>2:00 - 3:00</th>
+                                    <th>3:00 - 4:00</th>
+                                    <th>4:00 - 5:00</th>
+                                    <th>5:00 - 6:00</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for i in matrix %}
+                            <tr>
+                                {% for j in i %}
+                                    {% if forloop.counter == 1 %}
+                                    <td><b>{{ j }}</b></td>
+                                    {% else %}
+                                    <td>{{ j }}</td>
+                                    {% endif %}
+                                {% endfor %}
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+ <!-- Footer -->
+<footer class="page-footer font-small mdb-color darken-3 pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!--Grid row-->
+    <div class="row d-flex justify-content-center">
+
+      <!--Grid column-->
+      <div class="col-md-6">
+
+        <!-- Video -->
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/3BVQ9Scdglg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a> Sushant Agawane </a>
+     <a> Chaitanya Dhavan </a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+    {% endblock %}

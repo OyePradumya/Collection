@@ -1,0 +1,48 @@
+{% load static %}
+
+<!-- Bootstrap core CSS-->
+<link href="{% static '/info/bootstrap/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+<!-- Custom fonts for this template-->
+<link href="{% static '/info/bootstrap/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <h2 class="text-center">List Of Free Teachers</h2>
+    <ul class="list-group">
+        {% for t in ft_list %}
+            <li class="list-group-item list-group-item-success">{{ t }}</li>
+        {% endfor %}
+    </ul>
+ <!-- Footer -->
+<footer class="page-footer font-small mdb-color darken-3 pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!--Grid row-->
+    <div class="row d-flex justify-content-center">
+
+      <!--Grid column-->
+      <div class="col-md-6">
+
+        <!-- Video -->
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/3BVQ9Scdglg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a> Sushant Agawane </a>
+    <a> Chaitanya Dhavan </a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->

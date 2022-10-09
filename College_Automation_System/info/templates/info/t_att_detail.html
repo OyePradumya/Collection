@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% extends 'info/base.html' %}
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Attendance</title>
+</head>
+<body>
+    {% block content %}
+        <div class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-table"></i>
+            <strong>{{ cr.name }}</strong></div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Date</th>
+                        <th>Day</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                        {% for a in att_list %}
+                        <tr class="row100 body">
+                            <td>{{ forloop.counter }}</td>
+                            <td>{{ a.date }}</td>
+                            <td>{{ a.date|date:"l" }}</td>
+                            {% if a.status %}
+                            <td class="p-3 mb-2 bg-success text-white">Present <span class="glyphicon glyphicon-thumbs-up"></span></td>
+                            {% else %}
+                            <td class="p-3 mb-2 bg-danger text-white">Absent <span class="glyphicon glyphicon-thumbs-down"></span</td>
+                            {% endif %}
+                            <td><a class="btn btn-warning" href="{% url 'change_att' a.id %}">Change</a> </td>
+                        </tr>
+                    {% empty %}
+                            <p>student has no attendance</p>
+                    {% endfor %}
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+ <!-- Footer -->
+<footer class="page-footer font-small mdb-color darken-3 pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!--Grid row-->
+    <div class="row d-flex justify-content-center">
+
+      <!--Grid column-->
+      <div class="col-md-6">
+
+        <!-- Video -->
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/3BVQ9Scdglg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a> Sushant Agawane </a>
+    <a> Chaitanya Dhavan </a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+    {% endblock %}
+

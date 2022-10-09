@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Documentation Icon Font - Weather Icons 7 - by Pixeden.</title>
+
+	<!-- Docs CSS -->
+	<link href="docs/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="docs/css/bootstrap-select.css" rel="stylesheet" />
+	<link href="docs/css/prism.css" rel="stylesheet" />
+	<link href="docs/css/style.css" rel="stylesheet" />
+
+	<!-- Icon font CSS -->
+	<link href="pe-icon-7-weather/css/pe-icon-7-weather.css" rel="stylesheet" />
+	<link href="pe-icon-7-weather/css/helper.css" rel="stylesheet" />
+
+</head>
+<body>
+
+	<header id="top-bar">
+		<div class="container">
+			<img src="docs/images/logo.png" alt="logo"/>
+		</div>
+	</header> <!-- /top-bar -->
+
+	<section id="hero_box">
+		<div class="container">
+			<h1>Documentation</h1>
+      <p>You will find in this document details on how to use our icon font and a list of useful helper classes.</p>
+			</div>
+		</section> <!-- /hero_box -->
+
+<section id="docs_box">
+	<div class="container">
+		<section id="default-css">
+			<h2 class="page-header">Add our icon font <small>to your website</small></h2>
+			<ol>
+				<li>Copy the entire <code>pe-icon-7-weather</code> directory into your project.</li>
+				<li>
+					In the <code>&lt;head&gt;</code> of your html, reference the location to our icon font CSS: <span class="italic">pe-icon-7-weather.css</span> and if needed helper CSS: <span class="italic">helper.css</span>.
+<pre class="language-markup"><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/pe-icon-7-weather/css/pe-icon-7-weather.css&quot;&gt;
+
+&lt;!-- Optional - Adds useful class to manipulate icon font display --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/pe-icon-7-weather/css/helper.css&quot;&gt;</code></pre>
+				</li>
+			</ol>
+		</section>
+		<section id="inline">
+			<h2 class="page-header">Place the icons <small>in your HTML</small></h2>
+			<div class="row">
+				<div class="col-md-3 col-sm-4">
+					<p>
+						<span class="pe-7w-rain-alt"></span> pe-7w-rain-alt <br/>
+						<i class="pe-7w-sun"></i> pe-7w-home
+					</p>
+				</div>
+				<div class="col-md-9 col-sm-8">
+					<p>Easiest way is to place your icon inline using a html tag such as <code>&lt;span&gt;</code> or <code>&lt;i&gt;</code></p>
+<pre class="language-markup">
+<code>&lt;span class=&quot;pe-7w-rain-alt&quot;&gt;&lt;/span&gt; pe-7w-rain-alt
+&lt;i class=&quot;pe-7w-sun&quot;&gt;&lt;/i&gt; pe-7w-sun</code></pre>
+					<div class="alert alert-success"> icon unicode is added with CSS and the pseudo-class :before.</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="icomoon">
+		<h2 class="page-header">Compatible with Icomoon <small>font creator tool</small></h2>
+    <p>The IcoMoon app lets you build and use your own icon sets: <a target="_blank" href="http://icomoon.io/app/">IcoMoon App</a>.<br>
+		You can import <code>icomoon/*selection.json*</code> in the IcoMoon app using the *Import Icons* button (or via Main Menu > Manage Projects) to retrieve this specific icon font.<br>
+    This way you can mix and match our icon font with other fonts or select only the icons you need and generate a new font.
+    </p>
+		</section>
+
+		<section id="helper">
+		<h2 class="page-header">Helper classes <small>based on font-awesome useful classes <span class="italic">(optional)</span></small></h2>
+		<p> Below you will find a list of useful classes to modify the icon display, layout, sizes etc... They come with the helper.css file and are based on a modified version of font-awesome classes.
+		<strong>Important:</strong> <span class="italic"> if you already use font-awesome (FA) icon font in your website, you might want to delete the classes in the helper file under <code>/* FA based classes */</code> and use the FA classes instead.</span></p>
+		</section>
+
+		<section id="larger">
+		  <h3 class="page-header">Larger Icons &amp; Vertical Align </h2>
+		  <div class="row">
+		    <div class="col-md-3 col-sm-4">
+		      <p><i class="pe-7w-rain-alt pe-lg pe-va"></i> pe-7w-rain-alt</p>
+		      <p><i class="pe-7w-rain-alt pe-2x pe-va"></i> pe-7w-rain-alt</p>
+		      <p><i class="pe-7w-rain-alt pe-3x pe-va"></i> pe-7w-rain-alt</p>
+		      <p><i class="pe-7w-rain-alt pe-4x pe-va"></i> pe-7w-rain-alt</p>
+		      <p><i class="pe-7w-rain-alt pe-5x pe-va"></i> pe-7w-rain-alt</p>
+		    </div>
+		    <div class="col-md-9 col-sm-8">
+		      <p>
+		        To increase icon sizes relative to their container, use the <code>pe-lg</code> (33% increase), <code>pe-2x</code>,
+		        <code>pe-3x</code>, <code>pe-4x</code>, or <code>pe-5x</code> classes.<br/>
+		        To align the icon at the middle of a text, use the <code>pe-va</code> class.
+		      </p>
+<pre class="language-markup"><code>&lt;p&gt;&lt;i class=&quot;pe-7w-rain-alt pe-lg pe-va&quot;&gt;&lt;/i&gt; pe-7w-rain-alt&lt;/p&gt;
+&lt;p&gt;&lt;i class=&quot;pe-7w-rain-alt pe-2x pe-va&quot;&gt;&lt;/i&gt; pe-7w-rain-alt&lt;/p&gt;
+&lt;p&gt;&lt;i class=&quot;pe-7w-rain-alt pe-3x pe-va&quot;&gt;&lt;/i&gt; pe-7w-rain-alt&lt;/p&gt;
+&lt;p&gt;&lt;i class=&quot;pe-7w-rain-alt pe-4x pe-va&quot;&gt;&lt;/i&gt; pe-7w-rain-alt&lt;/p&gt;
+&lt;p&gt;&lt;i class=&quot;pe-7w-rain-alt pe-5x pe-va&quot;&gt;&lt;/i&gt; pe-7w-rain-alt&lt;/p&gt;
+</code></pre>
+		      <div class="alert alert-success">
+		        If your icons are getting chopped off on top and bottom, make sure you have
+		        sufficient line-height.
+		      </div>
+		    </div>
+		  </div>
+		</section>
+
+
+<section id="fixed-width">
+  <h2 class="page-header">Fixed Width Icons</h2>
+  <div class="row">
+    <div class="col-md-3 col-sm-4">
+      <ul class="nav nav-pills nav-stacked margin-bottom">
+        <li class="active"><a href="#"><i class="pe-7w-rain-alt pe-fw"></i>&nbsp; Raining</a></li>
+        <li><a href="#"><i class="pe-7w-sun pe-fw"></i>&nbsp; Sunny day</a></li>
+        <li><a href="#"><i class="pe-7w-light pe-fw"></i>&nbsp; Lightning</a></li>
+        <li><a href="#"><i class="pe-7w-cloud-wind pe-fw"></i>&nbsp; Windy</a></li>
+      </ul>
+    </div>
+    <div class="col-md-9 col-sm-8">
+      <p>
+        Use <code>pe-fw</code> to set icons at a fixed width. Great to use when variable icon widths throw off alignment.
+        Especially useful in things like nav lists. <span class="italic">(Reminder: nav list classes in the example are from bootstrap)</span>
+      </p>
+<pre class="language-markup"><code>&lt;ul class="nav nav-pills nav-stacked"&gt;
+  &lt;li class="active"&gt;&lt;a href="#"&gt;&lt;i class="pe-7w-rain-alt pe-fw"&gt;&lt;/i&gt; Raining&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="active"&gt;&lt;a href="#"&gt;&lt;i class="pe-7w-sun pe-fw"&gt;&lt;/i&gt; Sunny day&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="active"&gt;&lt;a href="#"&gt;&lt;i class="pe-7w-light pe-fw"&gt;&lt;/i&gt; Lightning&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="active"&gt;&lt;a href="#"&gt;&lt;i class="pe-7w-cloud-wind pe-fw"&gt;&lt;/i&gt; Windy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    </div>
+  </div>
+</section>
+
+
+	</div> <!-- /container-->
+</section> <!-- /hero_box -->
+
+
+
+
+<footer class="main-footer">
+	<div class="container">
+		<p>
+			2014 © Weather Icon Font Set by Pixeden.
+			<br/> Version · 1.0.0
+		</p>
+	</div>
+</footer>
+
+</div> <!-- /wrapper -->
+
+
+
+
+
+<!-- Scripts -->
+<script type="text/javascript" src="docs/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="docs/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="docs/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="docs/js/prism.js"></script>
+<script type="text/javascript" src="docs/js/main.js"></script>
+
+
+</body>
+</html>
