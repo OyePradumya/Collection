@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="Icon.png" rel="icon">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="calc.js"></script>
+</head>
+<body>
+    <div class="main">
+
+        <!---Output screen--->
+        <input type="text" id="screen"></input>
+
+        <!---Digits, operators, clear and backspace buttons-->
+        <button class="bt1" onclick="clearscreen()" >C</button>
+        <button class="bt" onclick="reset()" >AC</button>
+        <button class="bt" onclick="numpress('/')" >/</button>
+        <button class="bt" onclick="numpress('7')">7</button>
+        <button class="bt" onclick="numpress('8')">8</button>
+        <button class="bt" onclick="numpress('9')">9</button>
+        <button class="bt" onclick="numpress('*')">x</button>
+        <button class="bt" onclick="numpress('4')">4</button>
+        <button class="bt" onclick="numpress('5')">5</button>
+        <button class="bt" onclick="numpress('6')">6</button>
+        <button class="bt" onclick="numpress('-')" style="font-size: 26px;">-</button>
+        <button class="bt" onclick="numpress('1')">1</button>
+        <button class="bt" onclick="numpress('2')">2</button>
+        <button class="bt" onclick="numpress('3')">3</button>
+        <button class="bt" onclick="numpress('+')">+</button>
+        <button class="bt" onclick="numpress('%')">%</button>
+        <button class="bt" onclick="numpress('0')">0</button>
+        <button class="bt" onclick="numpress('.')">.</button>
+
+        <!---Equal button--->
+        <div>
+            <button class="bt2" onclick="equals()">=</button>
+        </div>
+    </div>
+</body>
+</html>
