@@ -1,0 +1,137 @@
+
+/*Body section*/
+body{
+    background-color: #091921;
+}
+
+/*Main section*/
+.main{
+    width: 335px;
+    height: 519px;
+    background-color:  #091921;
+    margin: auto;
+    margin-top: 110px;
+    -moz-box-shadow: 0 0 17px;
+    -webkit-box-shadow: 0 0 17px ;
+    box-shadow: 0 0 17px ;
+}
+
+/*Screen section*/
+#screen{
+    width: 322.6px;
+    height: 129px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    margin-left: 0.3px;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 30px;
+    pointer-events: none;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:500;
+}
+
+/*--------Button section starting--------*/
+
+/*Dark-blue buttons starting*/
+.bt{
+    width: 80.3px;
+    height: 79.35px;
+    display:inline-block;
+    border: none;
+    background-color: rgba(20, 35, 61, 0.836);
+    font-size: 22px;
+    color: white;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    margin-top: -2.7px;
+    margin-left: .45px;
+    transition:all .2s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;    
+}
+/*Dark-blue buttons ending*/
+
+
+/*Clear button starting*/
+.bt1 {
+    width: 165.5px;
+    height: 76.5px;
+    background-color: rgb(255, 145, 42);
+    font-size: 26px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    border: none;
+    position: relative;
+    left: 0.55px;
+    color: white;
+    transition: .5s;
+    outline:none;
+    overflow:hidden;
+}
+/*Clear button ending*/
+
+
+/*EqualTo button starting*/
+.bt2{
+    width: 80.3px;
+    height: 79px;
+    background-color: #03afffbd;
+    position: relative;
+    left: 254.7px;
+    top: -79px;
+    text-align: center;
+    border: none;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ; 
+    font-weight: bold;
+    font-size: 31px;
+    color: white;
+    outline: none;
+    overflow: hidden;
+}
+/*EqualTo button ending*/
+
+
+/*Button hover-effects*/
+.bt:hover, .bt1:hover, .bt2:hover{
+    background-image:linear-gradient(rgb(63, 241, 63),rgb(65, 160, 52));
+}
+
+
+/*Button focus-effects starting*/
+.bt:after, .bt1:after, .bt2:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, .5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+  
+@keyframes ripple {
+    0% {
+      transform: scale(0, 0);
+      opacity: 1;
+    }
+    20% {
+      transform: scale(15, 15);
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(35, 35);
+    }
+}
+  
+.bt:focus:not(:active)::after, .bt1:focus:not(:active)::after, .bt2:focus:not(:active)::after {
+    animation: ripple .8s ease-out;
+}
+/*Button focus-effects ending*/
+
+/*---------End of Button section---------*/
