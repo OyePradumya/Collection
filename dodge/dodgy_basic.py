@@ -1,14 +1,3 @@
-# Dodgy game
-
-# Rule
-'''
-Blue ball is hero and red ball is enemy.
-If  collide with enemy, game is over
-Evade the enemy as long as possible!!
-'''
-
-# By mahendra 
-
 import random, sys, time, math, pygame
 from pygame.locals import *
 import numpy as np
