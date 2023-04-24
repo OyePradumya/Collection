@@ -1,0 +1,3 @@
+- This is a analog clock ui..written in html,css,javascript
+- This can be executed using any javascript engine
+- Happy coding
